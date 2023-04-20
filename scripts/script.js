@@ -46,3 +46,10 @@ function clear() {
   result.innerText = "";
   return;
 }
+
+function add() {
+  const operatorAdd = document.createElement("span");
+  operatorAdd.innerText = "+";
+  result.append(operatorAdd);
+  var mathOperationInitialized = true;
+}
