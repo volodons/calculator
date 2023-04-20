@@ -7,6 +7,93 @@ body {
 }
 
 .calculator {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "result result result ."
+    "c ce zero divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "equally equally equally .";
+  gap: 1rem;
+  padding: 2rem;
+  background-color: black;
+}
+
+.result-wrapper {
+  display: grid;
+}
+
+.result {
+  grid-area: result;
+}
+
+.c {
+  grid-area: c;
+}
+
+.ce {
+  grid-area: ce;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.add {
+  grid-area: add;
+}
+
+.equally {
+  grid-area: equally;
 }
