@@ -10,18 +10,29 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "result result result ." "c ce zero divide" "seven eight nine multiply" "four five six subtract" "one two three add" "equally equally equally .";
+  grid-template-areas: "result result result result" "c ce zero divide" "seven eight nine multiply" "four five six subtract" "one two three add" "equally equally equally equally";
   gap: 1rem;
   padding: 2rem;
   background-color: black;
 }
 
-.result-wrapper {
-  display: grid;
+.button--small {
+  padding: 1rem;
 }
 
 .result {
   grid-area: result;
+  background-color: white;
+}
+
+.result__equality-operator {
+  text-align: start;
+  font-size: 2rem;
+}
+
+.result__number {
+  text-align: end;
+  font-size: 2rem;
 }
 
 .c {
