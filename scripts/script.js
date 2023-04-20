@@ -35,6 +35,8 @@ buttonSubtract.addEventListener("click", subtract);
 buttonMultiply.addEventListener("click", multiply);
 buttonDivide.addEventListener("click", divide);
 
+buttonEqually.addEventListener("click", equally);
+
 var mathOperationInitialized = false;
 
 function pushNumber(number) {
