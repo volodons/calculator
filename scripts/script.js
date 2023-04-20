@@ -38,6 +38,6 @@ function pushNumber(number) {
 }
 
 function clear() {
-  result.remove();
+  result.innerText = "";
   return;
 }
