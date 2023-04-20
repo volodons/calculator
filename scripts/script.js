@@ -15,6 +15,7 @@ const buttonSix = document.querySelector("#six");
 const buttonSeven = document.querySelector("#seven");
 const buttonEight = document.querySelector("#eight");
 const buttonNine = document.querySelector("#nine");
+const result = document.querySelector("#result");
 
 buttonZero.addEventListener("click", () => pushNumber(0));
 buttonOne.addEventListener("click", () => pushNumber(1));
