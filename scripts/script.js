@@ -66,3 +66,10 @@ function add() {
   result.append(operatorAdd);
   mathOperationInitialized = true;
 }
+
+function subtract() {
+  const operatorSubtract = document.createElement("span");
+  operatorSubtract.innerText = "-";
+  result.append(operatorSubtract);
+  mathOperationInitialized = true;
+}
