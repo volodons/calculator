@@ -30,6 +30,11 @@ buttonNine.addEventListener("click", () => pushNumber(9));
 
 buttonC.addEventListener("click", clear);
 
+buttonAdd.addEventListener("click", add);
+buttonSubtract.addEventListener("click", subtract);
+buttonMultiply.addEventListener("click", subtract);
+buttonDivide.addEventListener("click", divide);
+
 function pushNumber(number) {
   const newNumber = document.createElement("span");
   newNumber.append(number);
