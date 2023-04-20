@@ -35,10 +35,23 @@ buttonSubtract.addEventListener("click", subtract);
 buttonMultiply.addEventListener("click", subtract);
 buttonDivide.addEventListener("click", divide);
 
+var mathOperationInitialized = false;
+
 function pushNumber(number) {
-  const newNumber = document.createElement("span");
-  newNumber.append(number);
-  result.append(newNumber);
+  switch (mathOperationInitialized) {
+    case false:
+      var newNumber = document.createElement("span");
+      newNumber.append(number);
+      result.append(newNumber);
+      break;
+    case true:
+      clear();
+      var newNumber = document.createElement("span");
+      newNumber.append(number);
+      result.append(newNumber);
+      mathOperationInitialized = false;
+      break;
+  }
   return;
 }
 
@@ -51,5 +64,5 @@ function add() {
   const operatorAdd = document.createElement("span");
   operatorAdd.innerText = "+";
   result.append(operatorAdd);
-  var mathOperationInitialized = true;
+  mathOperationInitialized = true;
 }
