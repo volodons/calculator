@@ -32,7 +32,7 @@ buttonC.addEventListener("click", clear);
 
 buttonAdd.addEventListener("click", add);
 buttonSubtract.addEventListener("click", subtract);
-buttonMultiply.addEventListener("click", subtract);
+buttonMultiply.addEventListener("click", multiply);
 buttonDivide.addEventListener("click", divide);
 
 var mathOperationInitialized = false;
@@ -71,5 +71,12 @@ function subtract() {
   const operatorSubtract = document.createElement("span");
   operatorSubtract.innerText = "-";
   result.append(operatorSubtract);
+  mathOperationInitialized = true;
+}
+
+function multiply() {
+  const operatorMultiply = document.createElement("span");
+  operatorMultiply.innerText = "*";
+  result.append(operatorMultiply);
   mathOperationInitialized = true;
 }
