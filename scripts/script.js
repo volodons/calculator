@@ -27,3 +27,10 @@ buttonSix.addEventListener("click", () => pushNumber(6));
 buttonSeven.addEventListener("click", () => pushNumber(7));
 buttonEight.addEventListener("click", () => pushNumber(8));
 buttonNine.addEventListener("click", () => pushNumber(9));
+
+function pushNumber(number) {
+  const newNumber = document.createElement("span");
+  newNumber.append(number);
+  result.append(newNumber);
+  return;
+}
