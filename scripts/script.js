@@ -15,3 +15,14 @@ const buttonSix = document.querySelector("#six");
 const buttonSeven = document.querySelector("#seven");
 const buttonEight = document.querySelector("#eight");
 const buttonNine = document.querySelector("#nine");
+
+buttonZero.addEventListener("click", () => pushNumber(0));
+buttonOne.addEventListener("click", () => pushNumber(1));
+buttonTwo.addEventListener("click", () => pushNumber(2));
+buttonThree.addEventListener("click", () => pushNumber(3));
+buttonFour.addEventListener("click", () => pushNumber(4));
+buttonFive.addEventListener("click", () => pushNumber(5));
+buttonSix.addEventListener("click", () => pushNumber(6));
+buttonSeven.addEventListener("click", () => pushNumber(7));
+buttonEight.addEventListener("click", () => pushNumber(8));
+buttonNine.addEventListener("click", () => pushNumber(9));
