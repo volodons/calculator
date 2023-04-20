@@ -80,3 +80,10 @@ function multiply() {
   result.append(operatorMultiply);
   mathOperationInitialized = true;
 }
+
+function divide() {
+  const operatorDivide = document.createElement("span");
+  operatorDivide.innerText = "/";
+  result.append(operatorDivide);
+  mathOperationInitialized = true;
+}
