@@ -1,3 +1,5 @@
+"use strict";
+
 const buttonEqually = document.querySelector("#equally");
 const buttonAdd = document.querySelector("#add");
 const buttonSubtract = document.querySelector("#subtract");
