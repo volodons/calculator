@@ -43,9 +43,7 @@ buttonEquals.addEventListener("click", pushEquals);
 
 // Pushes number to input/output field
 function pushNumber(number) {
-  let newNumber = document.createElement("span");
-  newNumber.append(number);
-  result.append(newNumber);
+  result.append(number);
   return;
 }
 
