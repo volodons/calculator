@@ -14,11 +14,11 @@ const buttonEight = document.querySelector("#eight");
 const buttonNine = document.querySelector("#nine");
 const buttonC = document.querySelector("#c");
 const buttonCE = document.querySelector("#ce");
-const buttonPlus = document.querySelector("#add");
-const buttonMinus = document.querySelector("#subtract");
-const buttonAsterisk = document.querySelector("#multiply");
-const buttonSlash = document.querySelector("#divide");
-const buttonEquals = document.querySelector("#equally");
+const buttonPlus = document.querySelector("#plus");
+const buttonMinus = document.querySelector("#minus");
+const buttonAsterisk = document.querySelector("#asterisk");
+const buttonSlash = document.querySelector("#slash");
+const buttonEquals = document.querySelector("#equals");
 
 buttonZero.addEventListener("click", () => pushNumber(0));
 buttonOne.addEventListener("click", () => pushNumber(1));
