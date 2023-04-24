@@ -77,14 +77,7 @@ function divide() {
 
 function equally() {
   const resultValue = result.value;
-  const stringArray = resultValue.split("+");
-  alert(stringArray);
-  const numArray = stringArray.map((str) => parseFloat(str));
-  alert(numArray);
-  let sum = 0;
-  for (let i = 0; i < numArray.length; i++) {
-    sum += numArray[i];
-  }
+  const end = eval(resultValue);
   clear();
-  result.append(sum);
+  result.append(end);
 }
