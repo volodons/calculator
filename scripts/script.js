@@ -39,23 +39,31 @@ buttonDivide.addEventListener("click", divide);
 
 buttonEqually.addEventListener("click", equally);
 
-var mathOperationInitialized = false;
+var inputArray = [];
+
+// var mathOperationInitialized = false;
+// function pushNumber(number) {
+//   switch (mathOperationInitialized) {
+//     case false:
+//       var newNumber = document.createElement("span");
+//       newNumber.append(number);
+//       result.append(newNumber);
+//       break;
+//     case true:
+//       clear();
+//       var newNumber = document.createElement("span");
+//       newNumber.append(number);
+//       result.append(newNumber);
+//       mathOperationInitialized = false;
+//       break;
+//   }
+//   return;
+// }
 
 function pushNumber(number) {
-  switch (mathOperationInitialized) {
-    case false:
-      var newNumber = document.createElement("span");
-      newNumber.append(number);
-      result.append(newNumber);
-      break;
-    case true:
-      clear();
-      var newNumber = document.createElement("span");
-      newNumber.append(number);
-      result.append(newNumber);
-      mathOperationInitialized = false;
-      break;
-  }
+  let newNumber = document.createElement("span");
+  newNumber.append(number);
+  result.append(newNumber);
   return;
 }
 
@@ -65,29 +73,48 @@ function clear() {
 }
 
 function add() {
+  // inputArray.push(result.value);
   const operatorAdd = document.createElement("span");
   operatorAdd.innerText = "+";
   result.append(operatorAdd);
-  mathOperationInitialized = true;
+  // mathOperationInitialized = true;
 }
 
 function subtract() {
   const operatorSubtract = document.createElement("span");
   operatorSubtract.innerText = "-";
   result.append(operatorSubtract);
-  mathOperationInitialized = true;
+  // mathOperationInitialized = true;
 }
 
 function multiply() {
   const operatorMultiply = document.createElement("span");
   operatorMultiply.innerText = "*";
   result.append(operatorMultiply);
-  mathOperationInitialized = true;
+  // mathOperationInitialized = true;
 }
 
 function divide() {
   const operatorDivide = document.createElement("span");
   operatorDivide.innerText = "/";
   result.append(operatorDivide);
-  mathOperationInitialized = true;
+  // mathOperationInitialized = true;
+}
+
+function equally() {
+  // inputArray.push(result.value);
+  // clear();
+  let inputValue = document.querySelector("#result").value;
+  alert(inputValue);
+  const stringArray = inputValue.split("+");
+  alert(stringArray);
+  const numArray = stringArray.map((str) => parseFloat(str));
+  alert(numArray);
+  // clear();
+  let sum = 0; // IMPORTANT
+  for (let i = 0; i < numArray.length; i++) {
+    sum += numArray[i];
+  }
+  clear();
+  result.append(sum);
 }
