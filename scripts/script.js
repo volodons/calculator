@@ -31,6 +31,7 @@ buttonSeven.addEventListener("click", () => pushNumber(7));
 buttonEight.addEventListener("click", () => pushNumber(8));
 buttonNine.addEventListener("click", () => pushNumber(9));
 buttonC.addEventListener("click", pushClear);
+buttonCE.addEventListener("click", pushClearEntry);
 buttonPlus.addEventListener("click", pushPlus);
 buttonMinus.addEventListener("click", pushMinus);
 buttonAsterisk.addEventListener("click", pushAsterisk);
@@ -45,6 +46,11 @@ function pushNumber(number) {
 }
 
 function pushClear() {
+  result.innerText = "";
+  return;
+}
+
+function pushClearEntry() {
   result.innerText = "";
   return;
 }
@@ -76,6 +82,6 @@ function pushSlash() {
 function pushEquals() {
   const resultValue = result.value;
   const equalsResult = eval(resultValue);
-  pushClear();
+  pushClearEntry();
   result.append(equalsResult);
 }
