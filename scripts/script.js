@@ -62,28 +62,28 @@ function pushClearEntry() {
 // Pushes plus sign to input/output field
 function pushPlus() {
   const plusSign = document.createElement("span");
-  plusSign.innerText = "+";
+  plusSign.innerText = " + ";
   result.append(plusSign);
 }
 
 // Pushes minus sign to input/output field
 function pushMinus() {
   const minusSign = document.createElement("span");
-  minusSign.innerText = "-";
+  minusSign.innerText = " - ";
   result.append(minusSign);
 }
 
 // Pushes asterisk sign to input/output field
 function pushAsterisk() {
   const asteriskSign = document.createElement("span");
-  asteriskSign.innerText = "*";
+  asteriskSign.innerText = " * ";
   result.append(asteriskSign);
 }
 
 // Pushes slash sign to input/output field
 function pushSlash() {
   const slashSign = document.createElement("span");
-  slashSign.innerText = "/";
+  slashSign.innerText = " / ";
   result.append(slashSign);
 }
 
