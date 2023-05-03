@@ -20,21 +20,24 @@ body {
   gap: 1rem;
   padding: 2rem;
   background-color: black;
+  border-radius: 25px;
 }
 
 .button {
   padding: 1rem;
+  border-radius: 25px;
 }
 
 .result {
   grid-area: result;
   background-color: white;
+  border-radius: 25px;
 }
 
 .result__equality-operator {
   position: relative;
   top: 20%;
-  margin: 0 0.5rem 0 0.5rem;
+  margin: 0 0.5rem 0 1rem;
   color: rgba(0, 0, 0, 0.25);
   font-size: 2rem;
 }
