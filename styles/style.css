@@ -26,12 +26,14 @@ body {
 }
 
 .result__equality-operator {
-  text-align: start;
+  position: relative;
+  top: 20%;
+  margin: 0 1rem 0 1rem;
+  color: rgba(0, 0, 0, 0.25);
   font-size: 2rem;
 }
 
 .result__number {
-  text-align: end;
   font-size: 2rem;
 }
 
