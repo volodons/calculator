@@ -91,6 +91,8 @@ function pushSlash() {
 function pushEquals() {
   const resultValue = result.value;
   const equalsResult = eval(resultValue);
-  pushClearEntry();
-  result.append(equalsResult);
+  if (equalsResult !== undefined) {
+    pushClearEntry();
+    result.append(equalsResult);
+  }
 }
