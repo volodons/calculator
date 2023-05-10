@@ -29,6 +29,12 @@ body {
   border-style: none;
   border-radius: 25px;
   background-color: white;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.button:active {
+  transform: translateY(6px);
 }
 
 .result {
